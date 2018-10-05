@@ -19,7 +19,7 @@ public class dni {
 		if(dni.length() == 9) {
 			comprovarLletra = Character.isLetter(dni.charAt(8));
 			if(comprovarLletra == false)
-				System.out.println("El ultimo caracter del dni tiene que ser una letra");
+				System.out.println("El último caracter del dni tiene que ser una letra");
 			else{
 				lletra = dni.charAt(8);
 				if(lletra >= 'A' && lletra <='Z')
@@ -29,7 +29,7 @@ public class dni {
 					if(comprovarNumero == true)
 						contaNumeros++;
 					else
-						System.out.println("El caràcter "+(i+1)+" no és un número");
+						System.out.println("El caracter "+(i+1)+" no es un número");
 				}
 				if(contaNumeros == 8){
 					numeros = Integer.valueOf(cadNumeros);
@@ -37,7 +37,7 @@ public class dni {
 					if(arr[resto] == lletra)
 						valid = true;
 					else
-						System.out.println("La lletra corresponent al número"+numeros+" és "+arr[resto]);
+						System.out.println("La letra corresponiente al número"+numeros+" es "+arr[resto]);
 				}
 			}
 		}else {
